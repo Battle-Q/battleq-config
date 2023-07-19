@@ -41,7 +41,7 @@ springdoc:
 jwt:
   access-token-expire-time: 1800
   refresh-token-expire-time: 604800
-  secret: ENC(SWXjrQUhMU0QS6T1Ngjn/SGhXqTqQKFbycQHfZV5mQZm4/JfNRJZr9rY2lpzTcU6)
+  secret: ENC(JTk3WJcX2DD4OjS9SRx4osohL+TOPN4g6U6D+g5odNppfxznTRmo+CRtcbctWDpEpF6XqT7IKAfKUn4gtExml4F+h/zuRpZOtQGxHeNP7nG/fpvNM/3V3cjtU4sDg+lxvAjAAtlQTKRFA4GrHaEaqij72Zt2EYHEJ+PZfFcmHcVsfq0EPiirKN/Mlu/mJ0tY)
 
 logging:
   level:
