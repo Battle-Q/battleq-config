@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: battleq-api
+  datasource:
+    hikari:
+      maximum-pool-size: 20
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(UrjYRutO2JigJ6L6CgDB+63B4K+L2wxi/RS8y6uzYnudnDxDramXrMmhvFbb3TYYkvC+XL4reaLJJ4JzvNJZuQIyHJp5voPE++ymrJcDEZ7NlUq3ONsZY9alEnYJGJaH3esmCZUYSAdIuxrznCzV/OFdRm84gHP1Vw82XmLsfrHDSAw4yzcN9A==)
+    username: ENC(kQGdQZbogRmv66AAkpiZaw==)
+    password: ENC(SMHiw6jkVbT47xgZBlGSCeNoikDL/XEm)
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+  redis:
+    host: ENC(vu4H7pXGlNwwW5z3Bfu9hgJ9UK1YuyLz)
+    port: 6379
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, refresh, info
+
+springdoc:
+  api-docs:
+    groups:
+      enabled: true
+  swagger-ui:
+    path: /api-spec
+    displayRequestDuration: true
+    groups-order: DESC
+    enabled: true
+    operations-sorter: method
+
+jwt:
+  access-token-expire-time: 1800
+  refresh-token-expire-time: 604800
+  secret: ENC(SWXjrQUhMU0QS6T1Ngjn/SGhXqTqQKFbycQHfZV5mQZm4/JfNRJZr9rY2lpzTcU6)
+
+logging:
+  level:
+    org.hibernate.type: error
+
+
+server:
+  port: 8081
